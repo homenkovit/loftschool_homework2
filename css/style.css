@@ -112,12 +112,10 @@
 .header__contacts-mail {
     color: #00b9fe;
     font-size: 17px;
-/*    text-decoration: none;*/
 }
 
-.header__contacts-mail:hover {
+.header__contacts-mail:hover, .select_block__menu-a:hover, .content__block-info a:hover {
     color: #613993;
-/*    text-decoration: underline;*/
 }
 
 /*MAIN MENU*/
@@ -266,10 +264,6 @@ ul {
     color: #00b9fe;
 }
 
-.select_block__menu-a:hover {
-    color: #613993;
-}
-
 .select_block__menu-active {
     text-decoration: none;
     color: #5c7b98;
@@ -289,45 +283,32 @@ ul {
     float: right;
     margin-top: -3px;
     margin-right: 19px;
+    display: inline-block;
     width: 133px;
-    height: 26px;
+    height: 24px;
+    border-box: box-sizing;
+    background-color: #FFF;
+    background: url(../img/select_btn.jpg) no-repeat 100% 0;
+    border: 1px solid #DAE1EB;
+    position: relative;    
 }
 
-.select_block__grid_select-select {
+.select_text {
+    position: absolute;
     color: #5C7B98;
     font-family: 'elektra_light_proregular';
     font-size: 14px;
-/*    padding-top: 3px;*/
-    width: 108px;
-    height: 24px;
-    background-color: #FFF;
-    border: 1px solid #DAE1EB;
-    position: relative;
-/*    overflow: hidden;*/
-    display: inline-block;
-    z-index: 99;
+    margin: 5px 30px 0 5px;
 }
 
-select {
-    width: 133px;
-    height: 24px;
-    line-height: 24px;
-    border: none;
-    background: none;
-    position: relative;
-}
-
-.select_button {
-/*    display: block;*/
-    width: 25px;
-    height: 24px;
-    background: #00B9FE;
-    background: url(../img/select_btn.png);
+.select {
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 50;
+    left: 0;
+    opacity: 0;
+    border: none;
 }
 
 /*CONTENT*/
@@ -442,7 +423,7 @@ select {
     display: block;
     width: 100%;
     height: 238px;
-    background: url(../img/footer_bckg.png);    
+    background: url(../img/footer_bckg.jpg);    
 }
 
 .footer_wrap {
@@ -529,15 +510,16 @@ select {
     display: block;
     width: 100%;
     height: 44px;
+    margin-left: -4px;
 }
 
 .footer__href-social a {
     display: block;
     float: left;
-    margin-left: 2px;
     margin-right: 14px;
     width: 36px;
     height: 36px;
+    margin-left: 2px;
 }
 
 .up_button {
