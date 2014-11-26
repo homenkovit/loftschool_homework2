@@ -1,0 +1,568 @@
+/*FONTS*/
+
+@font-face {
+    font-family: 'elektra_medium_proregular';
+    src: url('../fonts/elektra_medium_pro-webfont.eot');
+    src: url('../fonts/elektra_medium_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektra_medium_pro-webfont.woff2') format('woff2'),
+         url('../fonts/elektra_medium_pro-webfont.woff') format('woff'),
+         url('../fonts/elektra_medium_pro-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'elektra_light_proregular';
+    src: url('../fonts/elektra_light_pro-webfont.eot');
+    src: url('../fonts/elektra_light_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektra_light_pro-webfont.woff2') format('woff2'),
+         url('../fonts/elektra_light_pro-webfont.woff') format('woff'),
+         url('../fonts/elektra_light_pro-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'elektra_medium_proitalic';
+    src: url('../fonts/elektra_medium_pro_italic-webfont.eot');
+    src: url('../fonts/elektra_medium_pro_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/elektra_medium_pro_italic-webfont.woff2') format('woff2'),
+         url('../fonts/elektra_medium_pro_italic-webfont.woff') format('woff'),
+         url('../fonts/elektra_medium_pro_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'elektra_light_probold';
+    src: url('../fonts/font-webfont.eot');
+    src: url('../fonts/font-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/font-webfont.woff2') format('woff2'),
+         url('../fonts/font-webfont.woff') format('woff'),
+         url('../fonts/font-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*CLEARFIX*/
+
+.clearfix {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/*HEADER*/
+
+.header {
+    background: url(../img/header_bckg.png);
+    width: 100%;
+    height: 120px;
+}
+
+.header_wrap {
+    width: 1000px;
+    height: 120px;
+    margin: auto;
+}
+
+.header__logo {
+    background: url(../img/logo.png);
+    width: 199px;
+    height: 57px;
+    margin-top: 25px;
+    float: left;
+}
+
+.header__contacts {
+    width: 189px;
+    height: 49px;
+    margin-top: 23px;
+    float: right;
+    font-family: 'elektra_light_proregular';
+}
+
+.header__contacts-tel {
+    color: #5c7b98;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.header__contacts-tel > span {
+    color: #00b9fe;
+    font-family: 'elektra_light_probold';
+    font-size: 20px;
+}
+
+.header__contacts-mail {
+    color: #00b9fe;
+    font-size: 17px;
+/*    text-decoration: none;*/
+}
+
+.header__contacts-mail:hover {
+    color: #613993;
+/*    text-decoration: underline;*/
+}
+
+/*MAIN MENU*/
+
+.wrap {
+    width:1000px;
+    margin: auto;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.main_menu {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.main_menu-ul {
+    margin-top: -20px;
+    list-style: none;
+}
+
+.main_menu-li {
+    display: block;
+    float: left;
+    height: 40px;
+/*    border-left: 1px solid #ffffff;*/
+}
+
+.main_menu-a:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -13px;
+    border-left: 13px solid transparent;
+    border-bottom: 20px solid #f7f7f7;
+    border-top: 20px solid #f7f7f7;
+}
+
+.main_menu-a:after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -13px;
+    border-left: 13px solid #f7f7f7;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+}
+
+.main_menu-active, .sidebar__main-active {
+    color: #f7f7f7 !important;
+    background: #00b9fe !important;
+}
+
+.main_menu-active:after {
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 13px solid transparent;
+    border-bottom: 20px solid #f7f7f7;
+    border-top: 20px solid #f7f7f7;
+}
+
+.main_menu-active:before {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -13px;
+    border-left: 13px solid transparent;
+    border-bottom: 20px solid #00b9fe;
+    border-top: 20px solid #00b9fe;
+}
+
+.main_menu-a {
+    box-shadow: 0px 1px 1px 0.00px rgba(0, 0, 0, 0.15);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'elektra_light_proregular';
+    font-size: 14px;
+    height: 40px;
+    padding: 0 22px;
+    line-height: 40px;
+    background: #f7f7f7;
+    color: #5c7b98;
+    position: relative;
+}
+
+.main_menu-a:before:hover {
+    border-bottom: 20px solid #dce6f0;
+    border-top: 20px solid #dce6f0;    
+}
+
+.main_menu-a:after:hover {
+    border-left: 13px solid #dce6f0;
+}
+
+.main_menu-li:first-child {
+    border-left: none;
+}
+
+.main_menu-a:hover, .sidebar__main_a:hover {
+    background: #dce6f0;
+}
+
+/*SELECT BLOCK*/
+
+.select_block {
+    height: 44px;
+    margin-bottom: 10px;
+}
+
+.select_block__menu {
+    list-style: none;
+    float: left;
+}
+
+.select_block__menu-li {
+    display: block;
+    float: left;
+    padding-left: 4px;
+}
+
+.select_block__menu-li span {
+    font-size: 10px;
+    font-family: 'elektra_light_proregular';
+    color: #5c7b98;
+    padding-right: 4px;
+}
+
+.select_block__menu-a {
+    font-family: 'elektra_light_proregular';
+    font-size: 14px;
+    color: #00b9fe;
+}
+
+.select_block__menu-a:hover {
+    color: #613993;
+}
+
+.select_block__menu-active {
+    text-decoration: none;
+    color: #5c7b98;
+    cursor: default;
+}
+
+.select_block__page_number {
+    float: right;
+    font-size: 15px;
+}
+
+.select_block__page_number li {
+    padding-left: 12px;
+}
+
+.select_block__grid_select {
+    float: right;
+    margin-top: -3px;
+    margin-right: 19px;
+    width: 133px;
+    height: 26px;
+}
+
+.select_block__grid_select-select {
+    color: #5C7B98;
+    font-family: 'elektra_light_proregular';
+    font-size: 14px;
+/*    padding-top: 3px;*/
+    width: 108px;
+    height: 24px;
+    background-color: #FFF;
+    border: 1px solid #DAE1EB;
+    position: relative;
+/*    overflow: hidden;*/
+    display: inline-block;
+    z-index: 99;
+}
+
+select {
+    width: 133px;
+    height: 24px;
+    line-height: 24px;
+    border: none;
+    background: none;
+    position: relative;
+}
+
+.select_button {
+/*    display: block;*/
+    width: 25px;
+    height: 24px;
+    background: #00B9FE;
+    background: url(../img/select_btn.png);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 50;
+}
+
+/*CONTENT*/
+
+/*SIDEBAR*/
+
+.sidebar {
+    float: left;
+}
+
+.sidebar__main_ul {
+    list-style: none;
+    width: 230px;
+    overflow: hidden;
+}
+
+.sidebar__main_li {
+    border-bottom: 1px solid #dae1eb;
+    border-top: 1px solid #ffffff;
+}
+
+.sidebar__main_li span {
+    padding-left: 14px;
+}
+
+.sidebar__main_a {
+    display: block;
+    width: 230px;
+    text-decoration: none;
+    background: #f7f7f7;   
+    color:#5c7b98;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    font: 15px;
+    font-family: 'elektra_light_proregular';
+}
+
+.sidebar__main_li:first-child {
+    border-top: none;
+}
+
+.sidebar__main_li:last-child {
+    border-bottom: none;
+}
+
+.sidebar__sub_ul {
+    list-style-position: inside; 
+    list-style-image:url(../img/aside_arrow.png);
+}
+
+/*MAIN CONTENT*/
+
+.content {
+    width: 740px;
+    float: right;
+}
+
+.content__block {
+    width: 740px;
+    height: 160px;
+    border: 1px solid #dce3ec;
+    margin-bottom: 20px;
+    overflow: hidden;
+    font-family: 'elektra_light_proregular';
+    color: #5c7b98;
+    display: table;
+    text-align: center;        
+}
+
+.content__block:hover {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.content__block-image {
+    display: table-cell;
+    width: 194px;
+    height: 160px;
+    vertical-align: middle;
+}
+
+.content__block-info {
+    display: table-cell;
+    vertical-align: middle;
+    height: 160px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.content__block-info a {
+    color: #00B9FE;
+    font-size: 15px;
+}
+
+.about {
+    font-size: 15px;
+    font-family: 'elektra_light_proregular';
+    color: #5c7b98;
+    margin-bottom: 80px;
+}
+
+.about h2 {
+    font-size: 25px;
+    font-family: 'elektra_light_probold';
+}
+
+/*FOOTER*/
+
+.footer {
+    display: block;
+    width: 100%;
+    height: 238px;
+    background: url(../img/footer_bckg.png);    
+}
+
+.footer_wrap {
+    width: 1000px;
+    margin: auto;
+}
+
+.footer-l {
+    float: left;
+    width: 230px;
+}
+
+.footer__logo {
+    display: block;
+    background: url(../img/footer_logo.png);
+    width: 139px;
+    height: 39px;
+    margin-top: 99px;
+}
+
+.footer-r {
+    float: right;
+    width: 740px;
+    margin-top: 62px;
+}
+
+.footer__block {
+    float: left;
+}
+
+.footer__block-menu {
+    list-style: none;
+    display: inline-block;
+    margin-right: 72px;
+}
+
+.footer__block-menu li:first-child {
+    font-family: 'elektra_light_probold';
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff; 
+}
+
+.footer__block-menu a {
+    font-family: 'elektra_light_proregular';
+    font-size: 15px;
+    line-height: 25px;
+    color: #ffffff;    
+}
+
+.footer__href {
+    float: right;
+    width: 185px;
+    margin-top: 10px;
+}
+
+.footer__href ul {
+    list-style: none;
+}
+
+.footer__href-app {
+    height: 32px;
+    margin-bottom: 26px;
+}
+
+.footer__href-app a {
+    width: 90px;
+    height: 32px;
+    display: inline-block;
+    float: left;
+}
+
+.app_store {
+    margin-right: 5px;
+    background: url(../img/app_store_ico.png);
+}
+
+.play_store {
+    background: url(../img/play_store_ico.png);
+}
+
+.footer__href-social {
+    background: url(../img/social_ico.png) no-repeat;
+    display: block;
+    width: 100%;
+    height: 44px;
+}
+
+.footer__href-social a {
+    display: block;
+    float: left;
+    margin-left: 2px;
+    margin-right: 14px;
+    width: 36px;
+    height: 36px;
+}
+
+.up_button {
+    display: block;
+    width: 77px;
+    height: 39px;
+    background: url(../img/up_btn.png) no-repeat;
+    padding-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'elektra_light_probold';
+    position: fixed;
+    right: 20px;
+    bottom: 300px;
+}
+
+
+
+
+
+
+    
+
+
+    
+
