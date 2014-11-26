@@ -133,7 +133,7 @@ ul {
 
 .main_menu {
     height: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .main_menu-ul {
@@ -237,7 +237,6 @@ ul {
 
 .select_block {
     height: 44px;
-    margin-bottom: 10px;
 }
 
 .select_block__menu {
@@ -268,6 +267,10 @@ ul {
     text-decoration: none;
     color: #5c7b98;
     cursor: default;
+}
+
+.select_block__menu-active:hover {
+    color: #5c7b98;
 }
 
 .select_block__page_number {
@@ -344,7 +347,7 @@ ul {
     padding-right: 21px;
     padding-top: 8px;
     padding-bottom: 6px;
-    font: 15px;
+    font-size: 15px;
     font-family: 'elektra_light_proregular';
 }
 
@@ -357,6 +360,7 @@ ul {
 }
 
 .sidebar__sub_ul {
+    display: none;
     list-style-position: inside; 
     list-style-image:url(../img/aside_arrow.png);
 }
